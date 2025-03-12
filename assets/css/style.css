@@ -154,9 +154,9 @@ body.active {
     /* IE6-IE8 */ url("../fonts/REFAULT.woff") format("woff"),
     /* Modern Browsers */ url("../fonts/REFAULT.woff2") format("woff2"),
     /* Modern Browsers */ url("../fonts/REFAULT.ttf") format("truetype"); /* Safari, Android, iOS */
-  font-style: italic;
-  font-weight: normal;
-  text-rendering: optimizeLegibility;
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
 }
 
 /*-----------------------------------*\
@@ -1531,7 +1531,7 @@ body.active {
     height: 40px;
     background: var(--eerie-black);
     box-shadow: 0 3px 7px hsla(345, 75%, 30%, 0.2),
-      inset 0 3px 7px 0 hsla(335, 53%, 14%, 0.4);
+                inset 0 3px 7px 0 hsla(335, 53%, 14%, 0.4);
   }
 
   .btn-sign_in:is(:hover, :focus) {
@@ -1544,7 +1544,7 @@ body.active {
     padding: 6px;
     margin-right: 5px;
     box-shadow: 0 3px 7px hsla(345, 75%, 30%, 0.2),
-      inset 0 3px 7px 0 hsla(335, 53%, 14%, 0.4);
+                inset 0 3px 7px 0 hsla(335, 53%, 14%, 0.4);
   }
 
   .btn-sign_in .icon-box ion-icon {
@@ -2211,5 +2211,50 @@ body.active {
 
   .feature-list {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/*-----------------------------------*\
+  #LEGAL PAGES
+\*-----------------------------------*/
+
+.legal-content h2 {
+  color: var(--orange);
+  font-family: var(--ff-oswald);
+  font-size: var(--fs-4);
+  margin: 30px 0 15px;
+}
+
+.legal-content h3 {
+  color: var(--white);
+  font-family: var(--ff-oswald);
+  font-size: var(--fs-6);
+  margin: 20px 0 10px;
+}
+
+.legal-content p,
+.legal-content li {
+  color: var(--light-gray);
+  font-size: var(--fs-8);
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+
+.legal-content ul {
+  margin-bottom: 20px;
+}
+
+.legal-content a {
+  color: var(--orange);
+  text-decoration: underline;
+}
+
+.legal-content a:hover {
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .legal-content {
+    padding: 150px 0 80px;
   }
 }
