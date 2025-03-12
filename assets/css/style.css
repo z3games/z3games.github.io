@@ -1839,7 +1839,7 @@ body.active {
 }
 
 /* 
- * Games section styles
+ * Games section styles - Updated
  */
 
 .games {
@@ -1856,20 +1856,61 @@ body.active {
 }
 
 .game-card {
-  background: var(--raisin-black-2);
-  border-radius: 15px;
+  background: var(--raisin-black-1);
+  border-radius: 4px;
   overflow: hidden;
   transition: transform 0.3s ease;
+  box-shadow: 0 2px 4px hsla(0, 0%, 0%, 0.2);
 }
 
 .game-card.featured {
-  background: var(--raisin-black-2);
-  border: 2px solid var(--orange);
+  background: var(--raisin-black-1);
   position: relative;
   overflow: hidden;
   display: grid;
   grid-template-columns: 1fr;
   gap: 0;
+}
+
+.game-features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.game-feature-card {
+  background: var(--raisin-black-2);
+  padding: 30px;
+  border-radius: 4px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.game-feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.feature-title {
+  color: var(--white);
+  font-family: var(--ff-oswald);
+  font-size: var(--fs-6);
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.feature-description {
+  color: var(--light-gray);
+  font-size: var(--fs-8);
+  line-height: 1.6;
 }
 
 @media (min-width: 768px) {
@@ -1907,7 +1948,8 @@ body.active {
 .card-text {
   color: var(--light-gray);
   font-size: var(--fs-8);
-  line-height: 1.6;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
   margin-bottom: 30px;
 }
 
@@ -1933,6 +1975,8 @@ body.active {
 
 .card-buttons {
   margin-top: auto;
+  display: flex;
+  gap: 15px;
 }
 
 .store-button {
@@ -1958,6 +2002,10 @@ body.active {
   .card-content {
     padding: 50px;
   }
+
+  .game-features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1971,6 +2019,10 @@ body.active {
 
   .card-title {
     font-size: 3rem;
+  }
+
+  .game-features-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
