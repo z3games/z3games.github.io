@@ -14,7 +14,7 @@
     - favicon link
   -->
     <link
-      rel="shortcut icon" 
+      rel="shortcut icon"
       href="./assets/images/logo.png"
       type="image/png"
     />
@@ -311,26 +311,56 @@
         -->
           <section class="about" id="about">
             <div class="container">
-              <div class="about-content">
-                <h2 class="h2 section-title">About Z3Games</h2>
-                <p class="section-text">
-                  Z3Games is a passionate mobile game development studio
-                  dedicated to creating innovative and engaging gaming
-                  experiences. Our team combines creativity with technical
-                  excellence to deliver games that players love.
-                </p>
+              <h2 class="section-title">About Z3Games</h2>
+              <p class="section-text">
+                Crafting Innovative Mobile Gaming Experiences Since 2020
+              </p>
 
-                <div class="about-features">
-                  <div class="feature">
-                    <ion-icon name="rocket"></ion-icon>
-                    <h3>Innovation First</h3>
-                    <p>Pushing boundaries in mobile gaming</p>
-                  </div>
+              <div class="about-wrapper">
+                <div class="about-image">
+                  <img
+                    src="./assets/images/about-us.jpg"
+                    alt="Z3Games Team"
+                    class="about-img"
+                  />
+                </div>
 
-                  <div class="feature">
-                    <ion-icon name="people"></ion-icon>
-                    <h3>Player Focused</h3>
-                    <p>Creating games players love</p>
+                <div class="about-content">
+                  <h3 class="h3">Our Story</h3>
+                  <p class="about-text">
+                    Founded in 2020, Z3Games emerged from a passion for creating
+                    engaging mobile gaming experiences. Our team of dedicated
+                    developers, artists, and designers work together to bring
+                    innovative game concepts to life.
+                  </p>
+
+                  <div class="about-features">
+                    <div class="about-feature">
+                      <ion-icon name="game-controller-outline"></ion-icon>
+                      <h4>Innovative Gameplay</h4>
+                      <p>
+                        We focus on creating unique gaming mechanics that keep
+                        players engaged and entertained.
+                      </p>
+                    </div>
+
+                    <div class="about-feature">
+                      <ion-icon name="people-outline"></ion-icon>
+                      <h4>Player-First Approach</h4>
+                      <p>
+                        Our games are designed with player enjoyment and
+                        satisfaction as the top priority.
+                      </p>
+                    </div>
+
+                    <div class="about-feature">
+                      <ion-icon name="rocket-outline"></ion-icon>
+                      <h4>Continuous Innovation</h4>
+                      <p>
+                        We're constantly exploring new technologies and trends
+                        to stay ahead in the mobile gaming industry.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -342,33 +372,85 @@
         -->
           <section class="contact" id="contact">
             <div class="container">
-              <h2 class="h2 section-title">Contact Us</h2>
-              <p class="section-text">Get in touch with our team</p>
+              <h2 class="section-title">Contact Us</h2>
+              <p class="section-text">
+                Have questions or want to work together? Get in touch with us!
+              </p>
 
               <div class="contact-wrapper">
                 <div class="contact-info">
                   <div class="contact-item">
-                    <ion-icon name="mail"></ion-icon>
-                    <p>contact@z3games.com</p>
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <p>support@z3games.com</p>
                   </div>
 
                   <div class="contact-item">
-                    <ion-icon name="location"></ion-icon>
-                    <p>Your Location</p>
+                    <ion-icon name="location-outline"></ion-icon>
+                    <p>123 Game Street, Gaming City, GC 12345</p>
+                  </div>
+
+                  <div class="contact-item">
+                    <ion-icon name="call-outline"></ion-icon>
+                    <p>+1 (555) 123-4567</p>
                   </div>
 
                   <div class="social-links">
                     <a href="#" class="social-link">
-                      <ion-icon name="logo-twitter"></ion-icon>
+                      <ion-icon name="logo-discord"></ion-icon>
                     </a>
                     <a href="#" class="social-link">
-                      <ion-icon name="logo-facebook"></ion-icon>
+                      <ion-icon name="logo-twitch"></ion-icon>
                     </a>
                     <a href="#" class="social-link">
-                      <ion-icon name="logo-instagram"></ion-icon>
+                      <ion-icon name="logo-xbox"></ion-icon>
+                    </a>
+                    <a href="#" class="social-link">
+                      <ion-icon name="logo-youtube"></ion-icon>
                     </a>
                   </div>
                 </div>
+
+                <form class="contact-form">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name="name"
+                      required
+                      placeholder="Your Name"
+                      class="form-input"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      name="email"
+                      required
+                      placeholder="Your Email"
+                      class="form-input"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name="subject"
+                      required
+                      placeholder="Subject"
+                      class="form-input"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <textarea
+                      name="message"
+                      required
+                      placeholder="Your Message"
+                      class="form-textarea"
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">
+                    <span>Send Message</span>
+                    <ion-icon name="send-outline"></ion-icon>
+                  </button>
+                </form>
               </div>
             </div>
           </section>
@@ -383,51 +465,6 @@
     <footer>
       <div class="footer-top">
         <div class="container">
-          <div class="footer-brand-wrapper">
-            <a href="/" class="logo">
-              <img
-                src="./assets/images/logo.png"
-                alt="Z3Games logo"
-                width="80"
-                height="80"
-              />
-            </a>
-
-            <div class="footer-menu-wrapper">
-              <ul class="footer-menu-list">
-                <li>
-                  <a href="#games" class="footer-menu-link">Games</a>
-                </li>
-
-                <li>
-                  <a href="#highlights" class="footer-menu-link">Highlights</a>
-                </li>
-
-                <li>
-                  <a href="#about" class="footer-menu-link">About Us</a>
-                </li>
-
-                <li>
-                  <a href="#contact" class="footer-menu-link">Contact</a>
-                </li>
-              </ul>
-
-              <div class="footer-input-wrapper">
-                <input
-                  type="text"
-                  name="message"
-                  required
-                  placeholder="Find Here Now"
-                  class="footer-input"
-                />
-
-                <button class="btn btn-primary">
-                  <ion-icon name="search-outline"></ion-icon>
-                </button>
-              </div>
-            </div>
-          </div>
-
           <div class="footer-quicklinks">
             <ul class="quicklink-list">
               <li>
@@ -479,16 +516,8 @@
       <div class="footer-bottom">
         <div class="container">
           <p class="copyright">
-            Copyright &copy; 2022 <a href="#">codewithsadee</a>. all rights
-            reserved
+            Copyright &copy; 2022 <a href="#">Z3Games</a>. all rights reserved
           </p>
-
-          <figure class="footer-bottom-img">
-            <img
-              src="./assets/images/footer-bottom-img.png"
-              alt="Online payment companies logo"
-            />
-          </figure>
         </div>
       </div>
     </footer>
