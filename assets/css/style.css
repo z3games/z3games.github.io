@@ -2231,3 +2231,10 @@ body.active {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+section#games,
+section#highlights,
+section#about,
+section#contact {
+  scroll-margin-top: 110px;
+}
