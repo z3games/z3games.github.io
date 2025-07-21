@@ -1713,6 +1713,12 @@ body.active {
   transform: translateY(-5px);
 }
 
+.game-feature-card .feature-title {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .feature-image {
   width: 100%;
   height: 180px;
@@ -1744,13 +1750,20 @@ body.active {
 .card-banner {
   position: relative;
   overflow: hidden;
-  height: 300px;
+  width: 80%;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
 }
 
 .card-banner img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+  display: block;
+  margin: auto;
 }
 
 .card-content {
@@ -1898,6 +1911,8 @@ body.active {
   font-size: 2.5rem;
   color: var(--orange);
   margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .highlight-card h3 {
